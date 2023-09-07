@@ -10,6 +10,7 @@
   margin:3%;
   padding:2%;
   background-image:url("./image/WhatsApp Image 2023-09-05 at 8.54.43 AM.jpeg") ;
+  filter: 'grayscale(100%)';
   background-size: 300%;
   padding-bottom: 20%;
   /* background-repeat: no-repeat; */

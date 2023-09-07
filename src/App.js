@@ -7,51 +7,86 @@ import {TiUserAdd} from "react-icons/ti";
 import Card from 'react-bootstrap/Card';
 import Animate from './Animate';
 function App() {
-  const [data,setData]=useState({fullname:""});
-  const [email,setEmail]=useState("");
-
-  function submit(){
-    
-  }
-  function set(event){
-    setData(event.target.value)
-  }
-  function sete(event){
-  setEmail(event.target.value)
-  }
+  
  return (
 
     <div className="section2">
-        {/* <motion.div
-  animate={{ x: 100 }}
-  transition={{ ease: "easeIn", duration: 2 }}> */}
+         
 
      <div className='part1'>
+     <motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.5 }}  // Animation duration
+    >   
       <div className='text'>
       <h1 style={{"font-size":90}}>create your future
 superfast</h1>
 <h5>with an incredible blueprint, which covers all the possible steps & resources you need</h5> 
-      </div>
+      </div></motion.div>
    
 <div className='cardd'>
 <Card style={{width:"60rem",height:"20rem"}}>
   
-  <div className="icon1"><div className="head"><TiLocation/></div><div className="text">Build roadmaps to success</div></div>
-<div className="icon2"><div className="head"><TiWeatherSnow/></div><div className="text">Get Domain Relevant Insights</div></div>
-<div className="icon3"><div className="head"><TiUserAdd/></div><div className="text">Attain a sense of clarity</div></div>
-<div className="icon4"><div className="head"><TiLocation/></div><div className="text">Get directed by experts</div></div>
-<div className="icon5"><div className="head"><TiLocation/></div><div className="text">Expand your Vision</div></div>
-<div className="icon6"><div className="head"><TiLocation/></div><div className="text">Checklist of for success</div></div>
+  <div className="icon1"><motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    ><div className="head"><TiLocation/></div>   <div className="text">Build roadmaps to success</div></motion.div></div>
+<div className="icon2"><motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    ><div className="head"><TiWeatherSnow/></div><div className="text">Get Domain Relevant Insights</div></motion.div></div>
+<div className="icon3"><motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    ><div className="head"><TiUserAdd/></div><div className="text">Attain a sense of clarity</div></motion.div></div>
+<div className="icon4"><motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    ><div className="head"><TiLocation/></div><div className="text">Get directed by experts</div></motion.div></div>
+<div className="icon5"><motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    ><div className="head"><TiLocation/></div><div className="text">Expand your Vision</div></motion.div></div>
+<div className="icon6"><motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    ><div className="head"><TiLocation/></div><div className="text">Checklist of for success</div></motion.div></div>
 </Card>
 </div>
 </div>
-{/* </motion.div> */}
+
 
 <div className='part2'>
+<motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    >
 <h2 style={{"font-size":85}}>not a million features,
 but the only ones you need</h2>
-<h5>Dive into the features of our AI blueprint generator and discover how it can propel your projects to new heights</h5>
+<h5>Dive into the features of our AI blueprint generator and discover how it can propel your projects to new heights</h5></motion.div>
 </div>
+<motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    >
 <div className='img'>
 <div className='i1'>
   <div className='img1'>
@@ -86,19 +121,26 @@ Flexibly save, copy, download, share, & edit</h8></div>
   </div>
 </div>
 </div>
+</motion.div>
 
 <div className="part3">
+<motion.div
+      initial={{ y: -100 }}      // Initial position (above the screen)
+      animate={{ y: 0 }}         // Target position (starts at the normal position)
+      exit={{ y: -100 }}         // Exit position (above the screen)
+      transition={{ duration: 0.3 }}  // Animation duration
+    >
   <div className='text'>
     <h3 style={{fontSize:40}}>improving at every stage with</h3>
     <h1 style={{fontSize:75}}>Ai + Human Expert</h1>
     <h6 style={{fontSize:20}}>Got a low Blueprint score? No worries. Schedule a call with our expert Blueprint writers, refine your strategy, and elevate your Blueprint's impact. Your success is just a conversation away with DayZero.</h6>
-  </div>
+  </div></motion.div>
   <div className='pic'>
 <img src="https://beta.dayzero.vercel.app/_next/static/media/ai-banners.2627ec32.svg"/>
   </div>
 </div>
 
-<Animate/>
+
 </div>
 
   );
